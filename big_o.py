@@ -55,7 +55,7 @@ for i in range(len(numbers)):
 
 print("Best2: ",best2)
 
-# O(n)
+# O(n), linear time, as the number of inputs grow time grows
 best3 = 0
 check3 = 0
 
@@ -64,3 +64,6 @@ for i in range(len(numbers)):
     best3 = max(best,check3)
 
 print("Best3: ",best3)
+
+# Constant, Logarithmic, Linear, Linearithmic, Quadratic, Exponential, Factorial
+# Fastest to slowest
