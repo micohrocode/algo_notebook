@@ -17,4 +17,4 @@ def containsNearbyDuplicate(nums, k):
                 seen.remove(nums[i-k])
         return False
 
-containsNearbyDuplicate(test)
+containsNearbyDuplicate(test,3)

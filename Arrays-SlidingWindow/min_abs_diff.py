@@ -17,3 +17,5 @@ def minimumAbsDifference(arr):
                 result.append([arr[i-1],arr[i]])
 
         return result 
+
+minimumAbsDifference(test)
