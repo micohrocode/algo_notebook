@@ -3,17 +3,10 @@ class LinkedNode:
         self.value = value
         self.next = None
 
-
-
-
-
 class LinkedList:
     def __init__(self):
         self.head = None
         self.tail = None
-
-    
-
 
     def append(self,value):
         new_node = LinkedNode(value)
@@ -25,9 +18,6 @@ class LinkedList:
             self.tail.next = new_node
             self.tail = new_node
 
-    
-
-
     def prepend(self,value):
         new_node = LinkedNode(value)
 
@@ -38,10 +28,6 @@ class LinkedList:
             new_node.next = self.head
             self.head = new_node
 
-    
-
-
-    
     def insert(self, index, value):
         if index == 0:
             self.prepend(value)
@@ -61,10 +47,6 @@ class LinkedList:
         if new_node.next is None:
             self.tail = new_node
 
-    
-
-
-
     def search(self,value):
         temp = self.head
 
@@ -75,10 +57,6 @@ class LinkedList:
 
         return False
     
-    
-
-
-
     def delete(self, value):
         if not self.head:
             return
@@ -99,11 +77,6 @@ class LinkedList:
                 self.tail = temp
             temp.next = temp.next.next
 
-
-
-
-
-    
     def traverse(self):
         temp = self.head
 
